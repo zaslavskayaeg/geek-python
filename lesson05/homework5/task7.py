@@ -21,7 +21,7 @@ business = []
 
 try:
 
-    with open(r'files/task7.txt') as task7:
+    with open(r'files/task7.txt', encoding='utf8') as task7:
 
         for string in task7.readlines():
             lst = list(string.replace("\n", "").split(" "))
@@ -44,5 +44,5 @@ try:
 except IOError:
     print("Произошла ошибка чтения!")
 
-with open(r'files/task7_1.txt', 'w') as task7_1:
+with open(r'files/task7_1.txt', 'w', encoding='utf8') as task7_1:
     json.dump(business, task7_1)

@@ -3,7 +3,7 @@
 
 try:
 
-    with open(r'files/task2.txt') as task2:
+    with open(r'files/task2.txt', encoding='utf8') as task2:
         i = 0
         for string in task2.readlines():
             i += 1

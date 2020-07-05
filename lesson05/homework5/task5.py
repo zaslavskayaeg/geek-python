@@ -13,14 +13,14 @@ while i < n:
     i += 1
 
 try:
-    with open(r'files/task5.txt', "w") as task5:
+    with open(r'files/task5.txt', "w", encoding='utf8') as task5:
         for el in random_list:
             print(el, end=' ', file=task5)
 except IOError:
     print("Произошла ошибка ввода-вывода!")
 
 try:
-    with open(r'files/task5.txt') as task5:
+    with open(r'files/task5.txt', encoding='utf8') as task5:
         for string in task5.readlines():
             for el in string.rstrip().split(" "):
                 sum_el += int(el)

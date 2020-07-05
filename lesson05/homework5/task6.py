@@ -36,7 +36,7 @@ subjects = {}
 syllabus = []
 
 try:
-    with open(r'files/task6.txt') as task6:
+    with open(r'files/task6.txt', encoding='utf8') as task6:
         for string in task6.readlines():
             S = string.replace("\n", "").partition(": ")
             subjects = {

@@ -10,7 +10,7 @@ staff = []
 employee = {}
 
 try:
-    with open(r'files/task3.txt') as task3:
+    with open(r'files/task3.txt', encoding='utf8') as task3:
         for string in task3.readlines():
             lst = list(string.replace("\n", "").split(" "))
             if len(lst) == 2:

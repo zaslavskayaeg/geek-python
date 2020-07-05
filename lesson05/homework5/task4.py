@@ -9,7 +9,7 @@
 # текстовый файл.
 
 try:
-    with open(r'files/task4.txt') as task4:
+    with open(r'files/task4.txt', encoding='utf8') as task4:
         i = 0
         try:
             with open(r'files/task4_1.txt', "w") as task4_1:
